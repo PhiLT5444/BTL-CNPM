@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="680.0" prefWidth="526.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.SuaHoKhauController">
+   <children>
+      <VBox layoutX="9.0" layoutY="87.0" prefHeight="184.0" prefWidth="506.0" style="-fx-border-color: red;">
+         <children>
+            <HBox alignment="CENTER" prefHeight="43.0" prefWidth="510.0" style="-fx-background-color: #d1717e;">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Thông tin hộ khẩu" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="23.0" />
+                     </font>
+                  </Text>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="56.0" prefWidth="509.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Mã hộ khẩu" textAlignment="CENTER" wrappingWidth="144.6708984375" />
+                  <TextField fx:id="maHoKhauText" editable="false" prefHeight="31.0" prefWidth="256.0" promptText="123" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="10.0" prefHeight="56.0" prefWidth="509.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Số thành viên" textAlignment="CENTER" wrappingWidth="144.6708984375" />
+                  <TextField fx:id="soThanhVienText" prefHeight="31.0" prefWidth="256.0" promptText="123" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="66.0" prefHeight="56.0" prefWidth="509.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Địa chỉ" textAlignment="CENTER" wrappingWidth="144.6708984375" />
+                  <TextField fx:id="diaChiText" prefHeight="31.0" prefWidth="256.0" promptText="abc" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <Button fx:id="editButton" layoutX="197.0" layoutY="618.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="132.0" style="-fx-background-color: GREEN;" text="EDIT" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font></Button>
+      <HBox alignment="CENTER" prefHeight="64.0" prefWidth="526.0" style="-fx-background-color: #b81233;">
+         <children>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Sửa hộ khẩu">
+               <font>
+                  <Font name="System Bold" size="42.0" />
+               </font>
+            </Text>
+         </children>
+      </HBox>
+      <VBox layoutX="10.0" layoutY="292.0" prefHeight="305.0" prefWidth="506.0" style="-fx-border-color: red;">
+         <children>
+            <HBox alignment="CENTER" prefHeight="43.0" prefWidth="510.0" style="-fx-background-color: #d1717e;">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Thông tin chủ hộ" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="23.0" />
+                     </font>
+                  </Text>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="56.0" prefWidth="509.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Mã nhân khẩu" textAlignment="CENTER" wrappingWidth="144.6708984375" />
+                  <TextField fx:id="maNhanKhauText" editable="false" prefHeight="31.0" prefWidth="256.0" promptText="123" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="10.0" prefHeight="56.0" prefWidth="509.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Họ và tên" textAlignment="CENTER" wrappingWidth="144.6708984375" />
+                  <TextField fx:id="hoVaTenText" prefHeight="31.0" prefWidth="256.0" promptText="abc" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="66.0" prefHeight="56.0" prefWidth="509.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Ngày sinh" textAlignment="CENTER" wrappingWidth="144.6708984375" />
+                  <TextField fx:id="tuoiText" prefHeight="31.0" prefWidth="256.0" promptText="yyyy-mm-dd" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="11.0" layoutY="166.0" prefHeight="56.0" prefWidth="509.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Số CCCD/CMND" textAlignment="CENTER" wrappingWidth="144.6708984375" />
+                  <TextField fx:id="cccdText" prefHeight="31.0" prefWidth="256.0" promptText="123" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="11.0" layoutY="222.0" prefHeight="56.0" prefWidth="509.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Số điện thoại" textAlignment="CENTER" wrappingWidth="144.6708984375" />
+                  <TextField fx:id="sdtText" prefHeight="31.0" prefWidth="256.0" promptText="123" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
